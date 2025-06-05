@@ -1,0 +1,26 @@
+<aside class="sidebar" [class.collapsed]="collapsed">
+    <div class="sidebar-content">
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-item" *ngFor="let item of menuItems">
+                    <div class="nav-link" [class.has-submenu]="item.submenu" [class.expanded]="isExpanded(item)"
+                        (click)="toggleSubmenu(item)">
+                        <div class="nav-link-content">
+                            <i [class]="item.icon" class="nav-icon"></i>
+                            <span class="nav-label" [class.hide]="collapsed">{{ item.label }}</span>
+                            <span class="nav-badge" *ngIf="item.badge && !collapsed">{{ item.badge }}</span>
+                        </div>
+                        <i class="fas fa-chevron-down submenu-arrow" *ngIf="item.submenu && !collapsed"
+                            [class.rotated]="isExpanded(item)"></i>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer" *ngIf="!collapsed">
+            <div class="footer-content">
+
+            </div>
+        </div>
+    </div>
+</aside>
