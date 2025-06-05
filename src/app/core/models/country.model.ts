@@ -1,4 +1,4 @@
-interface CountryInterface {
+export interface CountryInterface {
     name:string;
     population:string;
     wikipediaUrl:string;
@@ -13,4 +13,10 @@ interface Region {
 
 export interface WorldDataSet {
     [region:string]: Region
+}
+
+export interface RenderCirclePackingModel {
+    data: any;
+    element: HTMLElement;
+    onSelect: (country: any) => void;
 }
