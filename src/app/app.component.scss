@@ -1,0 +1,68 @@
+.app-container {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+    font-family: 'Inter', sans-serif;
+    padding: 0px !important
+}
+
+.main-layout {
+    display: flex;
+    position: relative;
+}
+
+.header-section{
+    position: sticky;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 9999;
+}
+.content-area {
+    flex: 1;
+    margin-left: 280px;
+    min-height: calc(100vh - 64px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #f8fafc;
+    padding-top: 40px;
+    padding-left: 200px;
+
+    &.sidebar-collapsed {
+        margin-left: 72px;
+    }
+}
+
+.chart-toggle-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+
+    button {
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        background-color: #f8f8f8;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 14px;
+
+        &.active {
+            background-color: #1e283a;
+            color: white;
+            border-color: #1e283a;
+        }
+
+        &:hover {
+            background-color: #e0e0e0;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .content-area {
+        margin-left: 0;
+        padding-left: 20px;
+
+        &.sidebar-collapsed {
+            margin-left: 0;
+        }
+    }
+}
