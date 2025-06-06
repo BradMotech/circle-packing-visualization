@@ -17,7 +17,7 @@
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/your-org/circle-packing-visualisation.git
+git clone https://github.com/BradMotech/circle-packing-visualization.git
 cd circle-packing-visualisation
 npm install
 npm start
