@@ -1,5 +1,7 @@
 # 🟢 Circle Packing Visualisation
 
+![Circle Packing Visualization Demo](src/assets/circle-packing.png)
+
 **CirclePackingVisualisation** is an interactive data visualization app built with Angular 16 and D3.js 7.9.0, leveraging NgRx for state management. It visualizes hierarchical data using a responsive and animated [circle packing](https://observablehq.com/@d3/circle-packing) layout.
 
 ---
