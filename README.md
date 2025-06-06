@@ -24,6 +24,7 @@ npm start
 ```
 
 ## 🚀 Project Architecture
+```
 src/
 ├── app/
 │   ├── core/       # Core modules and singletons (models)
@@ -35,6 +36,7 @@ src/
 │   └── app.module.ts     # Root module
 ├── assets/               # Static assets (flags, datasets, icons)
 └── index.html            # Application shell
+```
 
 ## 🚀 Commands to use
 
