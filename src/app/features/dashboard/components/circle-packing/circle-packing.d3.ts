@@ -5,6 +5,15 @@ import { FormatNumberPipe } from 'src/app/shared/pipes/format-population-area.pi
 
 const formatter = new FormatNumberPipe();
 
+/**
+ * Renders an interactive circle packing visualization using D3.
+ * 
+ * @param props - The renderCirclePacking props containing the element to render into, the data, and a callback when a country node is selected.
+ * @param props.element - The Document object model element to render the SVG into.
+ * @param props.data - The hierarchical country data with population and area info, currently in a 3 layered hierarchy.
+ * @param props.onSelect - Callback function when a country is selected (clicked) to show the sidenav with info about the country.
+ */
+
 export function renderCirclePacking(props: RenderCirclePackingModel) {
   // Desructuring props here for a clear access to passed-down data
   const { element, onSelect, data } = props;

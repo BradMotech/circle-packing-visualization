@@ -1,6 +1,5 @@
 import { isDevMode, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { CirclePackingComponent } from './features/dashboard/components/circle-packing/circle-packing.component';
 import { HttpClientModule } from '@angular/common/http';
